@@ -1,23 +1,38 @@
-# NCube Identity Website
+# NCube Identity Premium Website
 
-React + Vite + Tailwind CSS landing page for NCube Identity.
+Premium React + Vite website for NCube Identity.
 
-## Run locally
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Production build
 
 ```bash
 npm run build
 ```
 
-Cloudflare build settings:
+## Cloudflare Pages settings
 
-- Framework preset: Vite
+- Framework preset: React (Vite) or Vite
 - Build command: `npm run build`
 - Build output directory: `dist`
-- Root directory: `/`
+- Root directory: leave blank
+- Production branch: `main`
+
+## Important GitHub structure
+
+Upload the project so the repository root contains:
+
+```text
+index.html
+package.json
+vite.config.js
+src/
+public/
+```
+
+Do not upload `App.jsx`, `main.jsx`, or `styles.css` directly into the repository root. They must remain inside `src/`.
